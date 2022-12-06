@@ -1,0 +1,123 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/companies
+
+###
+GET http://localhost:3000/companies/3
+
+###
+POST http://localhost:3000/companies
+Content-Type: application/json
+
+{
+  "회사명": "test_회사명_5",
+  "국가": "test_국가_5",
+  "지역": "test_지역_5",
+  "email": "test_email_5",
+  "password": "test_password_5"
+}
+
+###
+PUT http://localhost:3000/companies/4
+Content-Type: application/json
+
+{
+  "id": 2,
+  "회사명": "test_회사명_2",
+  "국가": "test_국가_2",
+  "지역": "test_지역_2",
+  "email": "test_email_2",
+  "password": "test_password_2"
+}
+
+###
+DELETE http://localhost:3000/companies/5
+
+
+
+###
+GET http://localhost:3000/job_openings
+
+###
+GET http://localhost:3000/job_openings/1
+
+###
+GET http://localhost:3000/job_openings?search=8
+
+###
+POST http://localhost:3000/job_openings
+Content-Type: application/json
+
+{
+  "company_id": 9000,
+  "채용포지션": "test_채용포지션_16",
+  "채용보상금": 15,
+  "사용기술": "test_사용기술_16",
+  "채용내용": "test_채용내용_16"
+}
+
+###
+PUT http://localhost:3000/job_openings/12
+Content-Type: application/json
+
+{
+  "company_id": 4,
+  "채용포지션": "test_채용포지션_122",
+  "채용보상금": 12,
+  "사용기술": "test_사용기술_12",
+  "채용내용": "test_채용내용_12"
+}
+
+###
+DELETE http://localhost:3000/job_openings/7
+
+
+
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/1
+
+### 
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "test_email_4",
+  "password": "test_password_4"
+}
+
+###
+PUT http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "email": "test_email_3",
+  "password": "test_password_3"
+}
+
+###
+DELETE http://localhost:3000/users/2
+
+
+
+###
+GET http://localhost:3000/applications
+
+###
+GET http://localhost:3000/applications/20
+
+###
+POST http://localhost:3000/applications
+Content-Type: application/json
+
+{
+  "user_id": 90,
+  "company_id": 5,
+  "job_opening_id": 6
+}
+
+###
+DELETE http://localhost:3000/applications/1
